@@ -170,7 +170,7 @@ Toutes les données stockées dans une base de données relationnelle sont d'un 
 
 - `INTEGER`, un nombre entier positif ou négatif
 - `TEXT`, une chaîne de texte
-- `DATE`, une date formatée sous la forme AAAA-MM-JJ
+- `DATE`, une date formatée sous la forme `'AAAA-MM-JJ'
 - `REAL`, une valeur décimale
 
 ## Déclarations
