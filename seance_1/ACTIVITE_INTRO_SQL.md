@@ -107,14 +107,14 @@ Le langage SQL est largement utilisé aujourd'hui dans les framework Web et les 
 1. Lancez `pgAdmin4`.
 
 
-![pgadmin](./ressources/pgadmin.png)
-
-
 2. Créez une base de données `introduction`
   1. Servers > PostgreSQL > Databases
   2. Clic droit sur `Databases` puis sélectionnez ` Create > Database`.
   3. Entrez le nom `introduction` puis cliquer sur `Save`
   4. Sélectionnez `introduction` et cliquez sur `Query Tool` pour exécuter des scripts.
+
+
+![pgadmin](./ressources/pgadmin.png)
 
 
 3. Copier-Coller le code suivant dans l'éditeur de requêtes.
