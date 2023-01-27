@@ -261,7 +261,7 @@ SELECT * FROM personnes ;
          nom TEXT,
          age INTEGER
       );
-  ```
+      ```
 
   Nous apprendrons comment visualiser ce tableau dans un exercice ultérieur, après y avoir ajouté des données.
 
