@@ -136,7 +136,7 @@ VALUES ('Pablo', 8, 'Espagne');
 
 4. Exécutez le code.
 
-5. Afin de s'assurer que tout c'est bien passé Copiez-Collez et exécutez le code suivant:
+5. Supprimer ce qu'il y a dans l'éditeur, et  Copiez-Collez et exécutez le code suivant:
 ```sql
 SELECT * FROM personnes;
 ```
