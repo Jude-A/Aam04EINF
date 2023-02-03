@@ -107,14 +107,14 @@ Le langage SQL est largement utilisé aujourd'hui dans les framework Web et les 
 1. Lancez `pgAdmin4`.
 
 
-![pgadmin](./ressources/pgadmin.png)
-
-
 2. Créez une base de données `introduction`
   1. Servers > PostgreSQL > Databases
   2. Clic droit sur `Databases` puis sélectionnez ` Create > Database`.
   3. Entrez le nom `introduction` puis cliquer sur `Save`
   4. Sélectionnez `introduction` et cliquez sur `Query Tool` pour exécuter des scripts.
+
+
+![pgadmin](./ressources/pgadmin.png)
 
 
 3. Copier-Coller le code suivant dans l'éditeur de requêtes.
@@ -136,7 +136,7 @@ VALUES ('Pablo', 8, 'Espagne');
 
 4. Exécutez le code.
 
-5. Afin de s'assurer que tout c'est bien passé Copiez-Collez et exécutez le code suivant:
+5. Supprimer ce qu'il y a dans l'éditeur, et  Copiez-Collez et exécutez le code suivant:
 ```sql
 SELECT * FROM personnes;
 ```
@@ -170,7 +170,7 @@ Toutes les données stockées dans une base de données relationnelle sont d'un 
 
 - `INTEGER`, un nombre entier positif ou négatif
 - `TEXT`, une chaîne de texte
-- `DATE`, une date formatée sous la forme AAAA-MM-JJ
+- `DATE`, une date formatée sous la forme `'AAAA-MM-JJ'
 - `REAL`, une valeur décimale
 
 ## Déclarations
@@ -261,7 +261,7 @@ SELECT * FROM personnes ;
          nom TEXT,
          age INTEGER
       );
-  ```
+      ```
 
   Nous apprendrons comment visualiser ce tableau dans un exercice ultérieur, après y avoir ajouté des données.
 

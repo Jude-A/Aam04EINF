@@ -5,7 +5,7 @@ Les instructions fournies sont des lignes directrices générales. N'hésitez pa
 
 ### A vous de jouer !
 
-1. Créez une table nommée friends avec trois colonnes :
+1. Créez une table nommée `amis` avec trois colonnes :
 
     - `id` qui stocke `INTEGER`
     - `nom` qui stocke `TEXT`
@@ -45,10 +45,10 @@ Vérifiez deux choses :
 
 7. Mettez à jour l'adresse électronique de tous les membres de votre table.
 
-    - L'adresse électronique de Storm est `storm@gmail.com`.
+    - L'adresse électronique de `Tempête` est `tempete@gmail.com`.
 
 
-8. Attendez, Storm est une fiction...
+8. Attendez, `Tempête` est une fiction...
 
     - Retirez-la de vos amis.
 
