@@ -1,0 +1,107 @@
+-- SELECT *
+-- FROM startups;
+
+-- Calculate the total number of companies in the table.
+
+-- SELECT COUNT(name)
+-- FROM startups;
+
+-- ==> 70
+
+
+-- We want to know the total value of all companies in this table. Calculate this by getting the SUM() of the valuation column.
+
+-- SELECT SUM(valuation)
+-- FROM startups;
+
+-- ==> 974455790000
+
+-- What is the highest amount raised by a startup? Return the maximum amount of money raised.
+
+-- SELECT MAX(raised), name
+-- FROM startups;
+
+-- ==> 11500000000	REBU
+
+-- Edit the query so that it returns the maximum amount of money raised, during ‘Seed’ stage.
+
+-- SELECT MAX(raised), name
+-- FROM startups
+-- WHERE stage = 'Seed';
+
+-- ==> 1800000	Voice2Txt
+
+-- In what year was the oldest company on the list founded?
+
+-- SELECT name, MIN(founded)
+-- FROM startups;
+
+-- ==> RICE Media	1994
+
+-- Return the average valuation.
+
+-- SELECT AVG(valuation)
+-- FROM startups;
+
+-- ==> 15974685081.9672
+
+
+-- Return the average valuation, in each category.
+
+-- SELECT AVG(valuation), category
+-- FROM startups
+-- GROUP BY category;
+
+-- 4290000.0	/ no category
+-- ...
+-- 2150000.0	Virtual Reality
+
+-- Return the average valuation, in each category. Round the averages to two decimal places.
+
+-- SELECT ROUND(AVG(valuation), 2), category
+-- FROM startups
+-- GROUP BY category;
+
+-- Return the average valuation, in each category. Round the averages to two decimal places. Lastly, order the list from highest averages to lowest.
+
+-- SELECT ROUND(AVG(valuation), 2), category
+-- FROM startups
+-- GROUP BY 2
+-- ORDER BY 1 DESC;
+
+-- ==> 380490000000.0	/ Health Care
+-- ...
+-- ==> null / Video Streaming
+
+-- What are the most competitive markets? First, return the name of each category with the total number of companies that belong to it.
+
+-- SELECT category, COUNT(name) AS number_of_companies
+-- FROM startups
+-- GROUP BY category;
+
+-- ==> null / 3 companies
+-- ...
+-- ==> Virtual Reality / 2 companies
+
+-- Next, filter the result to only include categories that have more than three companies in them. What are the most competitive markets?
+
+-- SELECT category, COUNT(name) AS number_of_companies
+-- FROM startups
+-- GROUP BY category
+-- HAVING COUNT(name) > 3
+-- ORDER BY 2 DESC;
+
+-- ==> Social / Mobile / Education
+
+-- Let's see if there's a difference in startups sizes among different locations.  What is the average size of a startup in each location?
+
+-- SELECT location, ROUND(AVG(employees))
+-- FROM startups
+-- GROUP BY location;
+
+-- What is the average size of a startup in each location, with average sizes above 500?
+
+SELECT location, ROUND(AVG(employees)) AS number_of_employees
+FROM startups
+GROUP BY location
+HAVING number_of_employees > 500;
