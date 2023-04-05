@@ -36,7 +36,7 @@ INSERT INTO avis VALUES (
   1,
   5.0,
   'J''aimerais organiser une autre fête d''anniversaire chez Bytes de Chine !',
-  '05-22-2020',
+  '2020-05-22',2018-09-24
   1
 );
 
@@ -44,7 +44,7 @@ INSERT INTO avis VALUES (
   2,
   4.5,
   'Mis à part un petit malentendu, je lui donnerais 5.0 !',
-  '01-04-2020',
+  '2020-04-01',
   1
 );
 
